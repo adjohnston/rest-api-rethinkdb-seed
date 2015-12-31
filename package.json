@@ -9,7 +9,8 @@
     "url": "git+https://github.com/adjohnston/rest-api-rethinkdb-seed.git"
   },
   "dependencies": {
-    "restify": "^4.0.3"
+    "restify": "^4.0.3",
+    "rethinkdb": "^2.2.1"
   },
   "devDependencies": {
     "nodemon": "^1.8.1"
