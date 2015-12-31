@@ -1,0 +1,14 @@
+{
+  "name": "rest-api-rethinkdb-seed",
+  "version": "0.0.1",
+  "description": "A quick start REST API using Restify and RethinkDB",
+  "author": "Adam Johnston",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adjohnston/rest-api-rethinkdb-seed.git"
+  },
+  "dependencies": {
+    "restify": "^4.0.3"
+  }
+}
