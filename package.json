@@ -10,5 +10,8 @@
   },
   "dependencies": {
     "restify": "^4.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.8.1"
   }
 }
