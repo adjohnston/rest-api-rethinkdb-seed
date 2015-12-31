@@ -1,5 +1,7 @@
 const restify = require('restify');
-const server = restify.createServer();
+const server = restify.createServer({
+  name: 'seed-api'
+});
 
 server.get('/', (req, res, next) => {
   res.send('Hello world');
