@@ -1,10 +1,12 @@
 const r = require('rethinkdb');
+const config = require(`${__dirname}/config.js`);
 
 let connection;
 
 r.connect({
-  db: 'seed_project',
-  host: 'localhost'
+  db: config.rethinkdb.db,
+  port: config.rethinkdb.port,
+  host: config.rethinkdb.host
 }, (err, conn) => {
   if (err) throw err;
 

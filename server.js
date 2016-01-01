@@ -1,7 +1,8 @@
 const restify = require('restify');
+const config = require(`${__dirname}/config.js`);
 
 const server = restify.createServer({
-  name: 'seed-api'
+  name: config.restify.name
 });
 
 //  index
@@ -17,6 +18,6 @@ const posts = require(`${__dirname}/routes/posts`)(server);
 
 //  start server
 //  ---------------------------------------------------------------------------
-server.listen(8000, () => {
+server.listen(config.restify.port, () => {
   console.log(`${server.name} listening at ${server.url}`);
 });
