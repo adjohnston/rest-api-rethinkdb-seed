@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "restify": "^4.0.3",
-    "rethinkdb": "^2.2.1"
+    "rethinkdb": "^2.2.1",
+    "thinky": "^2.2.3"
   },
   "devDependencies": {
     "nodemon": "^1.8.1"
