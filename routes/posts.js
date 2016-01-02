@@ -12,10 +12,8 @@ module.exports = (server) => {
       message: req.params.message
     });
 
-    newPost.save().then((res) => {
-      console.log(res);
+    newPost.save().then(() => {
+      res.redirect('/posts', next);
     });
-
-    next();
   });
 };
