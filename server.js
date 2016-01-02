@@ -5,6 +5,10 @@ const server = restify.createServer({
   name: config.restify.name
 });
 
+server.use(restify.bodyParser({
+  mapParams: true
+}));
+
 //  index
 //  ---------------------------------------------------------------------------
 server.get('/', (req, res, next) => {
