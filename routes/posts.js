@@ -1,12 +1,12 @@
 const Post = require('../models/post.js');
 
 module.exports = (server) => {
-  server.get('/posts', (req, res, next) => {
     res.send('Posts');
+  server.get('/api/posts', (req, res, next) => {
     next();
   });
 
-  server.post('/posts/create', (req, res, next) => {
+  server.post('/api/posts/create', (req, res, next) => {
     const newPost = new Post({
       name: req.params.name,
       message: req.params.message

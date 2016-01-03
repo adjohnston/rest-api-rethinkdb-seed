@@ -12,7 +12,7 @@ server.use(restify.bodyParser({
 }));
 
 //  index route
-server.get('/', (req, res, next) => {
+server.get('/api', (req, res, next) => {
   res.send('Hello world');
   next();
 });
