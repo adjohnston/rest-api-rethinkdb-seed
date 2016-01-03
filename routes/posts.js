@@ -1,8 +1,10 @@
 const Post = require('../models/post.js');
 
 module.exports = (server) => {
-    res.send('Posts');
   server.get('/api/posts', (req, res, next) => {
+    Post.run().then((posts) => {
+      res.send(posts);
+    });
     next();
   });
 
